@@ -65,7 +65,10 @@ def takepic_up_del_File2GoogleDrive(fileName, localFilePath):
         else:
             print("\r"+"---sleeping now---",end="")
             time.sleep(3600)
-        cv2.destroyWindow(window_name)
+        try:
+            cv2.destroyWindow(window_name)
+        except:
+            pass
 
 
 
